@@ -17,6 +17,8 @@ ref class CCarre
 			int cote;
 			int sx;
 			int sy;
+			int dx;
+			int dy;
 			Color color;
 		
 		public :
@@ -24,6 +26,8 @@ ref class CCarre
 			{
 				sx = 10;
 				sy = 10;
+				dx = 1;
+				dy = 1;
 				cote = 20;
 				color = Color::Red;
 			}
@@ -124,5 +128,7 @@ ref class CCarre
 				Graphics ^g = form->CreateGraphics();
 				g->FillRectangle(gcnew SolidBrush(form->BackColor), sx, sy, cote, cote);
 			}
+			void animer(System::Windows::Forms::Form^ form)
+			{
 				
 	};
