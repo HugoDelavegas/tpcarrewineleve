@@ -130,5 +130,10 @@ ref class CCarre
 			}
 			void animer(System::Windows::Forms::Form^ form)
 			{
-				
+				Dessiner(form);
+				Effacer(form);
+				Deplacer(dx, dy);
+				Dessiner(form);
+			}
+			}
 	};
