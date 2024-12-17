@@ -31,10 +31,12 @@ namespace tpcarrewineleve {
 			//
 			// instanciation dans le tas managé du carré numéro 1 
 			pcarre1 = gcnew CCarre();
-			pcarre1->SetColor(Color::Red);
+			pcarre1->SetColor(Color::Salmon);
+			this->pcarre1->SetCote(25);
+			this->pcarre1->Setsy(45);
+			this->pcarre1->Setsx(10);
 			
 			
-			// A COMPLETER /////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -95,7 +97,7 @@ namespace tpcarrewineleve {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 262);
+			this->ClientSize = System::Drawing::Size(280, 269);
 			this->Name = L"Form1";
 			this->Text = L"Form1";
 			this->ResumeLayout(false);
