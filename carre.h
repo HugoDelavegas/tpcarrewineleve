@@ -1,7 +1,7 @@
 /// <summary>
 /// TP Animation de carre version C++.net visual Studio 2017
 /// rev 2024
-/// VERSION ELEVE a completer
+/// Leroux Erwan
 /// </summary>
 
 using namespace System;
@@ -34,7 +34,7 @@ ref class CCarre
 			/// <param name="x">Position x du carré</param>
 			void Setsx(int x1)
 			{
-				// A COMPLETER ///////////////////////////////////////////////////////////////////////////
+				this->sx = x1;
 			}
 
 			/// <summary>
@@ -43,8 +43,8 @@ ref class CCarre
 			/// <returns>Position x du carré</returns>
 			int Getsx()
 			{
-				// A COMPLETER ///////////////////////////////////////////////////////////////////////
-				return 0; // a modifier
+				
+				return this->sx;
 			}
 
 			/// <summary>
@@ -53,7 +53,7 @@ ref class CCarre
 			/// <param name="y">Position y du carré</param>
 			void Setsy(int y1)
 			{
-				// A COMPLETER //////////////////////////////////////////////////////////////////////////
+				this->sy = y1;
 				
 			}
 
@@ -63,8 +63,7 @@ ref class CCarre
 			/// <returns>Position y du carré</returns>
 			int Getsy()
 			{
-				// A COMPLETER //////////////////////////////////////////////////////////////////////
-				return 0; // a modifier
+				return this->sy;
 			}
 
 
@@ -83,7 +82,7 @@ ref class CCarre
 			/// <param name="cote">Coté du carré</param>
 			void SetCote(int cote)
 			{
-				// A COMPLETER /////////////////////////////////////////////////////////////////////////
+				this->cote = cote;
 			}
 
 			/// <summary>
@@ -92,8 +91,7 @@ ref class CCarre
 			/// <returns>Coté du carré</returns>
 			int GetCote() 
 			{
-				// A COMPLETER ////////////////////////////////////////////////////////////////////////
-				return 0; // a modifier
+				return cote;
 			}
 
 			/// <summary>
@@ -103,7 +101,8 @@ ref class CCarre
 			/// <param name="dy">Valeur dy du déplacement</param>
 			void Deplacer(int dx, int dy) 
 			{
-				// A COMPLETER /////////////////////////////////////////////////////////////////////
+				this->sx += dx;
+				this->sy += dy;
 			}
 
 			/// <summary>
